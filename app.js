@@ -46,7 +46,7 @@ const products = [
     id: "beans",
     name: "Beans Flour",
     category: "Beans",
-    price: 2500,
+    price: 3000,
     img: "beans-flour.png",
     tag: "AKARA & MOIMOI",
     desc: "Carefully milled beans, convenient for Akara and Moimoi.",
