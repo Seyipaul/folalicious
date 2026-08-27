@@ -71,13 +71,13 @@ const products = [
   },
 
   {
-    id: "snails",
-    name: "Dried Snails",
-    category: "Snails",
-    price: 2500,
-    img: "dry-snails.png",
-    tag: "NATURAL",
-    desc: "Conveniently dried Ewedu for everyday meals.",
+    id: "mix",
+    name: "Mixed Grain Pap",
+    category: "Pap & Grains",
+    price: 4000,
+    img: "mix-grain.png",
+    tag: "No ADDED SUGAR",
+    desc: "Maize, millet, sorghum and oats — mild and wholesome for family.",
   },
 ];
 let cart = JSON.parse(localStorage.getItem("folalicious_cart") || "[]");
