@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#09090a" />
+    <meta
+      name="description"
+      content="Folalicious Delight Enterprise — premium Nigerian foodstuffs, pap, grains, flour, beans and dry vegetables."
+    />
+    <meta
+      property="og:title"
+      content="Folalicious Delight | Premium Food Store"
+    />
+    <title>Folalicious Delight | Premium Food Store</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/folalicious-logo-black.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <span>✦</span> Premium Nigerian foodstuffs <b>•</b> South-West Nigeria
+      &amp; UK delivery <b>•</b> WhatsApp ordering <span>✦</span>
+    </div>
+
+    <header class="site-header">
+      <div class="header-main container">
+        <a class="brand" href="#home">
+          <span class="brand-mark"
+            ><img
+              src="assets/folalicious-logo-black.png"
+              alt="Folalicious Delight logo"
+          /></span>
+          <span class="brand-copy"
+            ><strong>FOLALICIOUS</strong><small>DELIGHT ENTERPRISE</small></span
+          >
+        </a>
+        <form class="search" id="searchForm" role="search">
+          <span class="search-icon">⌕</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search pap, flour, beans, vegetables..."
+            autocomplete="off"
+          />
+          <button aria-label="Search">Search</button>
+        </form>
+        <div class="top-actions">
+          <a href="#about" class="top-link">About</a>
+          <a href="#delivery" class="top-link">Delivery</a>
+          <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">
+            ♡
+          </button>
+          <button class="cart-btn" id="cartBtn">
+            <span>🛒</span><span class="cart-label">Cart</span
+            ><b id="cartCount">0</b>
+          </button>
+        </div>
+      </div>
+      <div class="nav-bar">
+        <div class="container nav-inner">
+          <button class="category-toggle" id="categoryToggle">
+            ☰ <span>Categories</span>
+          </button>
+          <nav class="category-nav">
+            <a href="#shop" data-filter="All">All Products</a>
+            <a href="#shop" data-filter="Flours">Flours</a>
+            <a href="#shop" data-filter="Pap & Grains">Pap &amp; Grains</a>
+            <a href="#shop" data-filter="Beans">Beans</a>
+            <a href="#shop" data-filter="Vegetables">Vegetables</a>
+            <a href="#about">Our Story</a>
+          </nav>
+          <div class="secure-note">
+            🔒 Safe ordering <span>·</span> Direct support
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">FOLALICIOUS DELIGHT ENTERPRISE</span>
+            <h1>Quality food.<br /><em>Simply delivered.</em></h1>
+            <p>
+              Carefully prepared Nigerian food products, beautifully packaged
+              for modern homes. Shop your everyday staples with a premium
+              marketplace experience.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#shop">Shop now <span>→</span></a>
+              <a class="btn btn-ghost" href="#delivery">Delivery info</a>
+            </div>
+            <div class="hero-proof">
+              <span>✓ Carefully prepared</span><span>✓ Premium packaging</span
+              ><span>✓ Direct WhatsApp support</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-glow"></div>
+            <div class="hero-ring">
+              PREMIUM<br /><strong>AFRICAN<br />GOODNESS</strong>
+            </div>
+            <img src="assets/peeled-beans.png" alt="Folalicious Peeled Beans" />
+            <div class="hero-caption">
+              <small>FEATURED PRODUCT</small><strong>Peeled Beans</strong
+              ><span>Clean · Convenient · Ready to Cook</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="container benefit-grid">
+          <div>
+            <span>✦</span>
+            <div>
+              <strong>Premium quality</strong
+              ><small>Carefully selected products</small>
+            </div>
+          </div>
+          <div>
+            <span>▣</span>
+            <div>
+              <strong>Easy ordering</strong
+              ><small>Simple cart + WhatsApp checkout</small>
+            </div>
+          </div>
+          <div>
+            <span>↗</span>
+            <div>
+              <strong>Fast support</strong><small>Talk to our team</small>
+            </div>
+          </div>
+          <div>
+            <span>⌁</span>
+            <div>
+              <strong>Flexible delivery</strong
+              ><small>South-West Nigeria &amp; UK</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop-section container" id="shop">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">OUR COLLECTION</span>
+            <h2>Popular right now</h2>
+            <p>Premium staples for everyday Nigerian meals.</p>
+          </div>
+          <div class="filter-pills" id="filters">
+            <button class="active" data-filter="All">All</button>
+            <button data-filter="Flours">Flours</button>
+            <button data-filter="Pap & Grains">Pap &amp; Grains</button>
+            <button data-filter="Beans">Beans</button>
+            <button data-filter="Vegetables">Vegetables</button>
+          </div>
+        </div>
+        <div class="shop-toolbar">
+          <span id="resultCount">7 products</span
+          ><button id="sortBtn">Featured ▾</button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="promo container">
+        <div>
+          <span class="eyebrow">THE FOLALICIOUS PROMISE</span>
+          <h2>Pure. Natural. Delicious.</h2>
+          <p>Goodness in every leaf — thoughtfully packaged for your family.</p>
+        </div>
+        <a class="btn btn-gold" href="#shop">Explore products →</a>
+      </section>
+
+      <section class="story-band">
+        <div class="container story-grid">
+          <div>
+            <span class="eyebrow">WHY FOLALICIOUS</span>
+            <h2>Made for the way you shop today.</h2>
+            <p>
+              Traditional Nigerian food products deserve a modern shopping
+              experience. We combine familiar favourites with clean
+              presentation, simple ordering and direct customer support.
+            </p>
+            <div class="story-stats">
+              <div><strong>7+</strong><small>Core products</small></div>
+              <div><strong>24/7</strong><small>Order requests</small></div>
+              <div><strong>2</strong><small>Delivery regions</small></div>
+            </div>
+          </div>
+          <div class="story-card">
+            <span>“</span>
+            <h3>Goodness in every leaf.</h3>
+            <p>
+              From pap and grains to beans, yam flour and dry vegetables,
+              Folalicious is built around convenient food for real homes.
+            </p>
+            <a href="#about">Discover our story →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-sections">
+        <div class="container info-grid">
+          <article id="about">
+            <span class="eyebrow">ABOUT US</span>
+            <h2>Food you can feel good about.</h2>
+            <p>
+              Folalicious Delight Enterprise Foodstuffs brings carefully
+              prepared Nigerian food products into a cleaner, simpler and more
+              convenient shopping experience.
+            </p>
+            <p>
+              Our focus is straightforward: dependable products, thoughtful
+              packaging and direct customer service.
+            </p>
+          </article>
+          <article id="delivery">
+            <span class="eyebrow">DELIVERY</span>
+            <h2>From our store to your door.</h2>
+            <div class="delivery-list">
+              <div>
+                <b>🇳🇬 South-West Nigeria</b
+                ><span
+                  >Delivery available across the South-West. Charges depend on
+                  destination and order size.</span
+                >
+              </div>
+              <div>
+                <b>🇬🇧 United Kingdom</b
+                ><span
+                  >UK delivery available. Contact us for current delivery
+                  pricing and schedule.</span
+                >
+              </div>
+              <div>
+                <b>💬 WhatsApp confirmation</b
+                ><span
+                  >We confirm your order, destination and delivery fee before
+                  payment.</span
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo"
+            ><img
+              src="assets/folalicious-logo-black.png"
+              alt="Folalicious Delight" /></span
+          ><strong>Folalicious Delight Enterprise</strong>
+          <p>Premium Nigerian foodstuffs.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="#shop">All products</a
+          ><a href="#shop" data-filter="Flours">Flours</a
+          ><a href="#shop" data-filter="Pap & Grains">Pap &amp; Grains</a
+          ><a href="#shop" data-filter="Beans">Beans</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="#delivery">Delivery</a><a href="#about">About us</a
+          ><a href="#" id="footerWhatsApp">WhatsApp support</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>+234 706 638 8889</p>
+          <p>folaliciousdelights@gmail.com</p>
+          <p>@folalicious_delight</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> Folalicious Delight Enterprise Foodstuffs. All
+        rights reserved.
+      </div>
+    </footer>
+
+    <nav class="mobile-bottom">
+      <a href="#home">⌂<small>Home</small></a
+      ><a href="#shop">⌕<small>Shop</small></a
+      ><button id="mobileCart">
+        🛒<b id="mobileCartCount">0</b><small>Cart</small></button
+      ><a href="#about">♡<small>Wishlist</small></a
+      ><button id="mobileMenu">☰<small>Menu</small></button>
+    </nav>
+
+    <div class="drawer-overlay" id="overlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+      <div class="drawer-head">
+        <div>
+          <small>YOUR BAG</small>
+          <h3>Shopping cart</h3>
+        </div>
+        <button id="closeCart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty">
+        <div>🛍️</div>
+        <strong>Your cart is empty</strong
+        ><span>Add something delicious to get started.</span>
+      </div>
+      <div class="cart-summary" id="cartSummary">
+        <div><span>Subtotal</span><strong id="cartSubtotal">₦0</strong></div>
+        <small>Delivery fee is confirmed after destination is provided.</small
+        ><button class="btn btn-gold full" id="checkoutBtn">
+          Proceed to checkout</button
+        ><button class="btn btn-whatsapp full" id="quickWhatsApp">
+          Checkout on WhatsApp
+        </button>
+      </div>
+    </aside>
+
+    <div class="modal" id="quickView" aria-hidden="true">
+      <div class="modal-card quick-card">
+        <button class="modal-close" id="closeQuickView">×</button>
+        <div class="quick-grid">
+          <div class="quick-gallery">
+            <div class="quick-main">
+              <img id="quickImage" alt="" /><button
+                class="gallery-prev"
+                id="quickPrev"
+              >
+                ‹</button
+              ><button class="gallery-next" id="quickNext">›</button
+              ><span class="gallery-count" id="quickCount">1 / 3</span>
+            </div>
+            <div class="thumbs" id="quickThumbs"></div>
+            <small class="gallery-note"
+              >Swipe or use the arrows to explore product views.</small
+            >
+          </div>
+          <div class="quick-info">
+            <span class="eyebrow" id="quickCategory"></span>
+            <h2 id="quickName"></h2>
+            <p id="quickDesc"></p>
+            <div class="quick-price" id="quickPrice"></div>
+            <div class="quick-meta">
+              <span>✓ Premium packaging</span><span>✓ Direct support</span
+              ><span>✓ WhatsApp ordering</span>
+            </div>
+            <div class="quick-actions">
+              <div class="quick-qty">
+                <button id="quickMinus">−</button><b id="quickQty">1</b
+                ><button id="quickPlus">+</button>
+              </div>
+              <button class="btn btn-gold" id="quickAdd">Add to cart</button>
+            </div>
+            <button class="btn btn-whatsapp full" id="quickOrder">
+              Order now on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="checkoutModal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="modal-close" id="closeCheckout">×</button
+        ><span class="eyebrow">ORDER NOW</span>
+        <h2>Complete your order</h2>
+        <p class="modal-note">
+          Enter your details. WhatsApp will open with a ready-to-send order
+          summary.
+        </p>
+        <form id="checkoutForm">
+          <div class="form-grid">
+            <label
+              >Full name<input
+                name="name"
+                required
+                placeholder="Your full name" /></label
+            ><label
+              >Phone number<input name="phone" required placeholder="+234..."
+            /></label>
+          </div>
+          <label
+            >Delivery location<textarea
+              name="address"
+              required
+              placeholder="Street, area, city, state/country"
+            ></textarea>
+          </label>
+          <div class="form-grid">
+            <label
+              >Delivery country<select name="country">
+                <option>Nigeria</option>
+                <option>United Kingdom</option>
+              </select></label
+            ><label
+              >Preferred contact<select name="contact">
+                <option>WhatsApp</option>
+                <option>Phone call</option>
+              </select></label
+            >
+          </div>
+          <label
+            >Order note<textarea
+              name="note"
+              placeholder="Any special instruction?"
+            ></textarea>
+          </label>
+          <div class="checkout-total">
+            <span>Order subtotal</span><strong id="checkoutTotal">₦0</strong>
+          </div>
+          <button class="btn btn-whatsapp full" type="submit">
+            Continue on WhatsApp →
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
