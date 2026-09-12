@@ -10,7 +10,7 @@ const products = [
     id: "amala",
     name: "Original Yam Flour",
     category: "Flours",
-    price: 2000,
+    price: 2500,
     img: "amala-yam-flour.png",
     tag: "BEST SELLER",
     desc: "Smooth yam flour for rich, traditional Amala.",
